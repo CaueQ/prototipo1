@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.quadradox {
+    width: 80%;
+    height: 500px;
+    border: 5px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.Shadow {
+    position: absolute;
+    width: 150px;
+    bottom: 0;
+    
+}
+
+.jump {
+    animation: jump 900ms ease-out;
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
