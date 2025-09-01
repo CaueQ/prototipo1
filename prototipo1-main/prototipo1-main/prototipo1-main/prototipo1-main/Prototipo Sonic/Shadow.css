@@ -18,18 +18,42 @@
 
 .Shadow {
     position: absolute;
-    width: 150px;
-    bottom: 0;
+    width: 50px;
+    bottom: 60px;
     
 }
 
 .Nuvens {
-    position: absolute;
-    top: 20px; /* Deixa as nuvens no topo do quadradox */
-    right: -200px; /* Começa fora do quadradox à direita */
-    width: 200px; /* Ajuste conforme o tamanho da nuvem */
-    height: 80px; /* Ajuste conforme o tamanho da nuvem */
+position: absolute;
+    top: 20px;
+    right: -200px;
+    width: 200px;
+    height: 80px;
     animation: moverNuvens 6s linear infinite;
+    background-image: url('caminho/para/sua-nuvem.png'); /* Defina o caminho correto */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.Chao {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: green;
+    z-index: 1;
+}
+
+.Morro {
+    position: absolute;
+    left: 60%;
+    bottom: 60px; /* mesmo nível do chão */
+    width: 120px;
+    height: 60px;
+    background: linear-gradient(to top left, #228B22, #90ee90);
+    
 }
 
 @keyframes moverNuvens {
@@ -37,28 +61,9 @@
         right:0px;
     }
     100% {
-        right: 50%;
+        right: 100%;
     }
 }
 
 
-
-.jump {
-    animation: jump 900ms ease-out;
-}
-
-@keyframes jump {
-
-    0% {
-        bottom: 0;
-    }
-
-    50% {
-        bottom: 180px;
-    }
-
-    100% {
-        bottom: 0;
-    }
-}
 
